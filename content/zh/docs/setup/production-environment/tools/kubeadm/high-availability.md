@@ -224,7 +224,7 @@ To add a pod CIDR pass the flag `--pod-network-cidr`, or if you are using a kube
 set the `podSubnet` field under the `networking` object of `ClusterConfiguration`.
 -->
 {{< note >}}
-一些 CNI 网络插件如 Calico 需要 CIDR 例如 `192.168.0.0/16` 和一些像 Weave 没有。参考 [CNI 网络文档](/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network)。
+有些 CNI 网络插件譬如 Calico 需要配置例如 `192.168.0.0/16` 的設定，而有些 CNI 网络插件譬如 Weave 則不用配置。参考 [CNI 网络文档](/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network)。
 通过传递 `--pod-network-cidr` 标志添加 pod CIDR，或者您可以使用 kubeadm 配置文件，在 `ClusterConfiguration` 的 `networking` 对象下设置 `podSubnet` 字段。
 {{< /note >}}
 
